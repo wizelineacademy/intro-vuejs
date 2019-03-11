@@ -4,6 +4,7 @@
   "main": "./src/index.js",
   "license": "MIT",
   "scripts": {
+    "start": "mdx-deck ./src/index.js",
     "dev": "mdx-deck ./src/index.js",
     "build": "mdx-deck build --no-html ./src/index.js"
   },
