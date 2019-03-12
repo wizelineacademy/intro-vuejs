@@ -2,17 +2,14 @@
   <div class="container">
     <h1>{{ name }}'s awesome To Do app</h1>
 
-    <!-- add to do -->
     <task-form @addTask="addTask" />
 
     <hr />
-    <h2 v-if="pendingTasks.length">pending tasks</h2>
-
+    <h2>pending tasks</h2>
     <todo-list @delete="deleteTask" :list="pendingTasks" @toggle="toggle" />
 
     <hr />
-
-    <h2 v-if="completedTasks.length">completed tasks</h2>
+    <h2>completed tasks</h2>
     <todo-list @delete="deleteTask" :list="completedTasks" @toggle="toggle" />
   </div>
 </template>
