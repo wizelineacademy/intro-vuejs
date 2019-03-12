@@ -1,17 +1,243 @@
 import { CodeSurfer } from "mdx-deck-code-surfer";
-import { Notes } from "mdx-deck";
+import { Notes, Appear } from "mdx-deck";
 import BlankTemplate from "../wizeline-theme/WBlankTemplate";
 import Codepen from "./components/Codepen";
 
+![](./slides/images/vue-logo.png)
+
+<Notes>
+  Today I'm going to talk about Vue.js But more important, we are going to...
+</Notes>
+
+---
+
+![](./slides/images/build.jpg)
+
+<Notes>... create something with vue</Notes>
+
+---
+
+### Today's Program
+
+- What is Vue.js?
+- How Vue.js works?
+- Add Vue.js to an existing project
+- Create a new project with Vue CLI
+- Make a To Do list app
+- Deploy it
+
+---
+
+# What is Vue.js?
+
+<Notes>
+Ok so what is Vue.js
+
+--- Ask the audience to see if they want to answer...
+
+</Notes>
+
+---
+
+## Vue.js is a progressive framework for building user interfaces.
+
+<Appear>
+  <p>but..., what does progressive framework means?</p>
+</Appear>
+
+<Notes>Before answering that, I want to make a poll</Notes>
+
+---
+
 export default BlankTemplate;
 
-<Codepen 
-  title="Adding Vue.js to a site"
-  label="Open"
-  url="https://codepen.io/ederdiaz/pen/ywoMqE"/>
+![](./slides/images/frameworks.png)
+
+<Notes>--- Ask to raise their hand for each framework they've used</Notes>
+
+---
+
+export default BlankTemplate;
+
+![](./slides/images/progressive_001.png)
+
 <Notes>
-  This is a working codepen,
-  be careful when clicking the sides as you might change the slide accidentally.
-  Also it won't change it's state in both windows,
-  any demo should be worked on the "normal mode" window.
+Now getting back to what is a progressive framework, these are the
+frameworks but ordered by how many decisions they've made for you.
+
+The frameworks to the right, already have a lot of tools that solve a bunch of problems in web development.
+
+The ones on the left have very few tools, like just the basic tools render a web page.
+
 </Notes>
+
+---
+
+export default BlankTemplate;
+
+![](./slides/images/progressive_002.png)
+
+<Notes>
+By the way, jQuery is way over there to the left, because it is not even a template engine.
+
+Anyways, what makes a framework progressive, is the flexibility it gives you to allow
+you to add libraries as your project grows, and let you make your own decisions on what to use.
+
+</Notes>
+
+---
+
+export default BlankTemplate;
+
+![](./slides/images/progressive_003.png)
+
+<Notes>
+So probably you are wondering which of those 2 you should use, and I'd say it depends on the situation.
+
+There is not something like the best framework overall
+
+---skip the next slide quickly
+
+</Notes>
+
+---
+
+![](./slides/images/podium.png)
+
+---
+
+# How Vue.js works?
+
+<Notes>Ok, se let's see how Vue.js works and what is so cool about it</Notes>
+
+---
+
+export default BlankTemplate;
+
+![](./slides/images/separation.png)
+
+<Notes>
+When we usually make a site we create the elements in out page with HTML
+
+Then we style them with CSS so they look nice
+
+And any interaction we need in our website is done in separate Javascript files, right?
+
+</Notes>
+
+---
+
+export default BlankTemplate;
+
+![](./slides/images/vue-separation.png)
+
+<Notes>
+But Vue.js changes this separation of concerns.
+
+Instead of thinking template, styles and interactions we can think in components,
+for example a button, a list, a navbar, footer, etc
+
+Each one of these having their own structure, style and interactions.
+
+</Notes>
+
+---
+
+export default BlankTemplate;
+
+![](./slides/images/lego.png)
+
+<Notes>You can think of them as lego blocks</Notes>
+
+---
+
+export default BlankTemplate;
+
+![](./slides/images/home-legos.png)
+
+<Notes>
+  So when you build your website you can identify all those elements and make a
+  component out of it
+</Notes>
+
+---
+
+export default BlankTemplate;
+
+<CodeSurfer
+  title="This is how a .vue file looks"
+  code={require("!raw-loader!./snippets/example.vue")}
+  lang="css"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    { range: [1, 5], notes: "this is the template or HTML part" },
+    { range: [6, 15], notes: "this is the behaviour or the JS part" },
+    { range: [16, 21], notes: "this is the style or the CSS part" },
+    { range: [1, 21], notes: "" }
+  ]}
+/>
+
+---
+
+### How Vue.js
+
+# RENDERING
+
+### works?
+
+<Notes>
+  now for the difficult part, let's see how Vue.js renders a component
+</Notes>
+
+---
+
+export default BlankTemplate;
+
+![](./slides/images/two-way.png)
+
+<Notes>
+  probably you won't understand this diagram at first (I didn't), but basically
+  it is the way Vue.js knows that something changed in the application and need
+  to render again your page
+</Notes>
+
+---
+
+export default BlankTemplate;
+
+## Let's add Vue.js to an "existing" project
+
+<Codepen label="Open" url="https://codepen.io/ederdiaz/pen/ywoMqE" />
+
+---
+
+# Create a new project with Vue CLI
+
+---
+
+## Install Vue CLI
+
+# https://cli.vuejs.org/
+
+---
+
+# Make a To Do list app
+
+---
+
+# Clone the repo
+
+### https://github.com/wizelineacademy/intro-vuejs
+
+---
+
+export default BlankTemplate;
+
+![](./slides/images/communication.png)
+
+---
+
+# Deploy it
+
+## https://app.netlify.com/drop
