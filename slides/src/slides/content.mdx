@@ -194,19 +194,45 @@ export default BlankTemplate;
 
 export default BlankTemplate;
 
+## 2-way data binding
+
 ![](./slides/images/two-way.png)
 
 <Notes>
-  probably you won't understand this diagram at first (I didn't), but basically
-  it is the way Vue.js knows that something changed in the application and need
-  to render again your page
+Vue.js has a mechanism called two way data binding
+
+probably you won't understand this diagram at first (I didn't), but basically
+it is the way Vue.js knows that something changed in the application and need
+to render again your page
+
+They say that analogies are best for learning so...
+
 </Notes>
 
 ---
 
 export default BlankTemplate;
 
-## Let's add Vue.js to an "existing" project
+## 2-way data binding
+
+![](./slides/images/two-way-001.png)
+
+<Notes>
+Let's say we got a bank account, you can add and remove money from your account in many different ways like ATM, credit card, your phone app, etc
+
+Also there's a snooping person that knows who needs to know about changes and also is always watching
+
+When a transaction is made, the snooping person checks for differences in your data and notifies anyone who subscribed to it
+
+Finally any component that needed that part of the data to be rendered updates automatically without changing any of the other parts that didn't need to change.
+
+</Notes>
+
+---
+
+export default BlankTemplate;
+
+## Add Vue.js to an "existing" project
 
 ### https://codepen.io/ederdiaz/pen/ywoMqE
 
@@ -260,7 +286,11 @@ Let's get back to the exercise to use the first one.
 
 ---
 
-# Make a To Do list app
+# Let's make a To Do list app
+
+See the latest changes at
+
+## http://ederdiaz.dev/code
 
 ---
 
@@ -273,6 +303,16 @@ Let's get back to the exercise to use the first one.
 export default BlankTemplate;
 
 ![](./slides/images/communication.png)
+
+<Notes>
+A good practice in Vue.js is that communication between parent and child
+should be like this.
+
+Parent should pass props to the child, and the child
+should not mutate the props, it should just send events so that the parent can
+update it's own data.
+
+</Notes>
 
 ---
 
